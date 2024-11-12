@@ -1,4 +1,4 @@
-/* Atur ulang margin dan padding untuk seluruh halaman */
+/* Mengatur ulang margin dan padding untuk seluruh halaman */
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +6,7 @@
 }
 
 html, body {
-    overflow-x: hidden; /* Hilangkan scroll samping */
+    overflow-x: hidden; /* Menghilangkan scroll samping */
     height: 100%;
 }
 
@@ -14,7 +14,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black; /* Untuk berjaga-jaga jika background tidak tampil */
+    background-color: black; /* Untuk backup jika background tidak tampil */
 }
 
 /* Gaya untuk kontainer */
@@ -31,7 +31,7 @@ body {
     width: 100vw;
     text-align: center;
     color: white;
-    padding-top: 20px; /* Sesuaikan untuk membuat judul lebih ke atas */
+    padding-top: 20px;
 }
 
 /* Gaya untuk judul */
@@ -104,22 +104,24 @@ h1 {
     background: none;
     border: none;
     cursor: pointer;
-    color: white;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     width: 50px;
     height: 50px;
-    background-image: url('https://raw.githubusercontent.com/WillEnyong/storyecosystem/main/asset/gulir.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .nav-left {
+    background-image: url('https://raw.githubusercontent.com/WillEnyong/storyecosystem/main/asset/left.png');
+    background-size: cover;
+    background-repeat: no-repeat;
     left: -60px;
 }
 
 .nav-right {
+    background-image: url('https://raw.githubusercontent.com/WillEnyong/storyecosystem/main/asset/right.png');
+    background-size: cover;
+    background-repeat: no-repeat;
     right: -60px;
 }
 
