@@ -9,7 +9,10 @@
 <body>
   <div class="container">
     <h1>EKOSISTEM STORY</h1>
-    <div class="menu">
+    
+    <div class="scroll-btn" id="scrollUp">↑</div> <!-- Tombol scroll atas -->
+    
+    <div class="menu" id="menuList">
       <div class="menu-item">
         <img src="https://raw.githubusercontent.com/WillEnyong/storyecosystem/main/icon/logo1.jpg" alt="Logo 1">
         <a href="https://example.com/1" class="btn">GO TO</a>
@@ -83,6 +86,31 @@
         <a href="https://example.com/18" class="btn">GO TO</a>
       </div>
     </div>
+    
+    <div class="scroll-btn" id="scrollDown">↓</div> <!-- Tombol scroll bawah -->
   </div>
+
+  <script>
+    const menuList = document.getElementById('menuList');
+    const scrollUp = document.getElementById('scrollUp');
+    const scrollDown = document.getElementById('scrollDown');
+    let offset = 0;
+
+    // Fungsi untuk menggulirkan menu ke atas
+    scrollUp.addEventListener('click', () => {
+      if (offset > 0) {
+        offset -= 120; // Geser ke atas sebesar tinggi item menu
+        menuList.style.transform = `translateY(${offset}px)`;
+      }
+    });
+
+    // Fungsi untuk menggulirkan menu ke bawah
+    scrollDown.addEventListener('click', () => {
+      if (offset < (menuList.children.length - 5) * 120) {
+        offset += 120; // Geser ke bawah sebesar tinggi item menu
+        menuList.style.transform = `translateY(${offset}px)`;
+      }
+    });
+  </script>
 </body>
 </html>
