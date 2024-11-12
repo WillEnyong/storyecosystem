@@ -31,14 +31,16 @@ body {
     width: 100vw;
     text-align: center;
     color: white;
-    padding-top: 20px;
+    padding-top: 60px; /* Memberikan ruang lebih banyak di atas untuk judul */
 }
 
 /* Gaya untuk judul */
 h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
+    font-size: 5em;  /* Memperbesar ukuran font */
+    margin-bottom: 40px;
     color: white;
+    position: absolute; /* Menempatkan judul di atas kontainer */
+    top: 20px; /* Memberikan sedikit jarak dari atas layar */
 }
 
 /* Container untuk slider */
@@ -128,7 +130,7 @@ h1 {
 /* Media queries untuk responsif */
 @media (max-width: 768px) {
     h1 {
-        font-size: 2em;
+        font-size: 3em;  /* Sesuaikan ukuran font pada layar kecil */
     }
 
     .slider-container {
