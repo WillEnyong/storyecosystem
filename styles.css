@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url('https://github.com/WillEnyong/storyecosystem/tree/main/asset');
+    background-image: url('https://raw.githubusercontent.com/WillEnyong/storyecosystem/main/asset/bg.png');
     background-size: cover;
     height: 100vh;
     overflow: hidden;
