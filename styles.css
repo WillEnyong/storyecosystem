@@ -1,0 +1,76 @@
+/* Body styling */
+body {
+  margin: 0;
+  background-image: url('Story.jpg'); /* Background gambar */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  color: #f5e4d7; /* Warna teks lebih terang */
+  height: 100vh;
+}
+
+/* Container styling */
+.container {
+  background-color: #656565; /* Warna background abu-abu gelap sesuai gambar */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan halus */
+  text-align: center;
+  width: 90%;
+  max-width: 1000px;
+}
+
+/* Header styling */
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #e7d2b5; /* Warna teks untuk judul */
+}
+
+/* Menu container */
+.menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Menu item styling */
+.menu-item {
+  background-color: #4c3a2f; /* Warna coklat tua untuk latar menu */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Bayangan lebih dalam */
+  text-align: center;
+  width: 150px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Button styling */
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #e7d2b5; /* Warna tombol sesuai gambar */
+  color: #4c3a2f; /* Warna teks tombol */
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+/* Hover effect */
+.btn:hover {
+  transform: scale(1.05); /* Efek zoom ketika tombol di-hover */
+}
+
+/* Image styling */
+.menu-item img {
+  width: 60px; /* Ukuran logo */
+  height: auto;
+  margin-bottom: 10px;
+}
