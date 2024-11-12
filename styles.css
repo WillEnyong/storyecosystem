@@ -1,3 +1,22 @@
+/* Atur ulang margin dan padding untuk seluruh halaman */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden; /* Hilangkan scroll samping */
+    height: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black; /* Untuk berjaga-jaga jika background tidak tampil */
+}
+
 /* Gaya untuk kontainer */
 .container {
     display: flex;
@@ -7,10 +26,12 @@
     background-image: url('https://raw.githubusercontent.com/WillEnyong/storyecosystem/main/asset/bg.png');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     height: 100vh;
-    overflow: hidden;
+    width: 100vw;
     text-align: center;
     color: white;
+    padding-top: 20px; /* Sesuaikan untuk membuat judul lebih ke atas */
 }
 
 /* Gaya untuk judul */
@@ -38,7 +59,7 @@ h1 {
 }
 
 .item {
-    flex: 0 0 220px; /* Menyesuaikan lebar item */
+    flex: 0 0 220px;
     margin: 0 10px;
     background-color: #4a3b2d;
     border-radius: 8px;
@@ -54,13 +75,13 @@ h1 {
 .item img {
     width: 100px;
     height: 100px;
-    border-radius: 15%; /* Membuat logo dengan rounded corner */
+    border-radius: 15%;
 }
 
 /* Gaya untuk tombol "GO TO" */
 .go-to-button {
     margin-top: 15px;
-    padding: 12px 25px; /* Memperbesar tombol */
+    padding: 12px 25px;
     background-color: #e4cfa0;
     color: #4a3b2d;
     border: none;
@@ -68,7 +89,7 @@ h1 {
     cursor: pointer;
     text-decoration: none;
     font-weight: bold;
-    width: 100px; /* Lebar tombol lebih besar */
+    width: 100px;
     text-align: center;
     font-size: 1em;
 }
@@ -89,15 +110,40 @@ h1 {
     transform: translateY(-50%);
     width: 50px;
     height: 50px;
-    background-image: url('https://raw.githubusercontent.com/WillEnyong/storyecosystem/main/asset/gulir.jpg'); /* Link raw untuk gambar gulir */
+    background-image: url('https://raw.githubusercontent.com/WillEnyong/storyecosystem/main/asset/gulir.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .nav-left {
-    left: -60px; /* Mengatur posisi kiri */
+    left: -60px;
 }
 
 .nav-right {
-    right: -60px; /* Mengatur posisi kanan */
+    right: -60px;
+}
+
+/* Media queries untuk responsif */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .slider-container {
+        width: 100%;
+    }
+
+    .item {
+        flex: 0 0 160px;
+    }
+
+    .go-to-button {
+        padding: 8px 20px;
+        font-size: 0.9em;
+        width: 80px;
+    }
+
+    .nav-left, .nav-right {
+        display: none; /* Hilangkan tombol navigasi di perangkat kecil */
+    }
 }
