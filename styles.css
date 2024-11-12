@@ -8,46 +8,46 @@ body {
   justify-content: center;
   align-items: center;
   font-family: Arial, sans-serif;
-  color: #f5e4d7; /* Warna teks lebih terang */
+  color: #f5e4d7;
   height: 100vh;
 }
 
 /* Container styling */
 .container {
-  background-color: #656565; /* Warna background abu-abu gelap sesuai gambar */
+  background-color: rgba(101, 101, 101, 0.8); /* Warna background abu-abu gelap dengan transparansi */
   padding: 20px;
   border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan halus */
   text-align: center;
   width: 90%;
-  max-width: 1000px;
+  max-width: 1200px;
 }
 
 /* Header styling */
 h1 {
   font-size: 36px;
   margin-bottom: 20px;
-  color: #e7d2b5; /* Warna teks untuk judul */
+  color: #e7d2b5;
 }
 
-/* Menu container */
+/* Menu container styling */
 .menu {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Grid dengan 3 kolom */
+  gap: 20px;
 }
 
 /* Menu item styling */
 .menu-item {
-  background-color: #4c3a2f; /* Warna coklat tua untuk latar menu */
+  background-color: #4c3a2f;
   padding: 15px;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Bayangan lebih dalam */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   text-align: center;
-  width: 150px;
-  height: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  height: 150px;
 }
 
 /* Button styling */
@@ -55,8 +55,8 @@ h1 {
   display: inline-block;
   margin-top: 10px;
   padding: 8px 16px;
-  background-color: #e7d2b5; /* Warna tombol sesuai gambar */
-  color: #4c3a2f; /* Warna teks tombol */
+  background-color: #e7d2b5;
+  color: #4c3a2f;
   text-decoration: none;
   font-weight: bold;
   border-radius: 8px;
@@ -65,12 +65,12 @@ h1 {
 
 /* Hover effect */
 .btn:hover {
-  transform: scale(1.05); /* Efek zoom ketika tombol di-hover */
+  transform: scale(1.05);
 }
 
 /* Image styling */
 .menu-item img {
-  width: 60px; /* Ukuran logo */
+  width: 80px;
   height: auto;
   margin-bottom: 10px;
 }
