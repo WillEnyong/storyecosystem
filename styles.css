@@ -40,7 +40,7 @@ h1 {
     margin-bottom: 40px;
     color: white;
     position: absolute; /* Menempatkan judul di atas kontainer */
-    top: -5px; /* Memberikan sedikit jarak dari atas layar */
+    top: 0px; /* Memberikan sedikit jarak dari atas layar */
 }
 
 /* Container untuk slider */
