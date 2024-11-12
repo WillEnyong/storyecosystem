@@ -1,76 +1,51 @@
-/* Body styling */
-body {
-  margin: 0;
-  background-image: url('https://raw.githubusercontent.com/WillEnyong/storyecosystem/main/asset/bg.png'); /* Background gambar */
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: Arial, sans-serif;
-  color: #f5e4d7;
-  height: 100vh;
-}
-
-/* Container styling */
+/* CSS untuk memperbesar ukuran logo */
 .container {
-  background-color: rgba(101, 101, 101, 0.8); /* Warna background abu-abu gelap dengan transparansi */
-  padding: 20px;
-  border-radius: 15px;
   text-align: center;
-  width: 90%;
-  max-width: 1200px;
+  font-family: Arial, sans-serif;
 }
 
-/* Header styling */
 h1 {
-  font-size: 36px;
+  font-size: 2em;
   margin-bottom: 20px;
-  color: #e7d2b5;
 }
 
-/* Menu container styling */
 .menu {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Grid dengan 3 kolom */
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 20px;
+  justify-items: center;
 }
 
-/* Menu item styling */
 .menu-item {
-  background-color: #4c3a2f;
+  background-color: #f4f4f4;
   padding: 15px;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  width: 150px;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 150px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
 }
 
-/* Button styling */
+.menu-item:hover {
+  transform: translateY(-5px); /* Efek hover untuk mengangkat item */
+}
+
+.menu-item img {
+  width: 100px; /* Atur lebar gambar */
+  height: 100px; /* Atur tinggi gambar */
+  object-fit: contain; /* Agar gambar tidak terdistorsi */
+  margin-bottom: 10px;
+}
+
 .btn {
   display: inline-block;
-  margin-top: 10px;
-  padding: 8px 16px;
-  background-color: #e7d2b5;
-  color: #4c3a2f;
+  padding: 8px 15px;
+  background-color: #4b3b3b;
+  color: white;
   text-decoration: none;
-  font-weight: bold;
-  border-radius: 8px;
-  transition: transform 0.2s;
+  border-radius: 5px;
 }
 
-/* Hover effect */
 .btn:hover {
-  transform: scale(1.05);
-}
-
-/* Image styling */
-.menu-item img {
-  width: 80px;
-  height: auto;
-  margin-bottom: 10px;
+  background-color: #3a2a2a;
 }
