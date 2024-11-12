@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url('your-background-image.jpg'); /* Ganti dengan URL background Anda */
+    background-image: url('https://github.com/WillEnyong/storyecosystem/tree/main/asset');
     background-size: cover;
     height: 100vh;
     overflow: hidden;
@@ -16,36 +16,48 @@
 h1 {
     font-size: 3em;
     margin-bottom: 20px;
+    color: white;
+}
+
+/* Container untuk slider */
+.slider-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    max-width: 1000px;
 }
 
 /* Gaya untuk item slider */
 .slider {
     display: flex;
     overflow: hidden;
-    width: 80%;
-    max-width: 1000px;
+    width: 100%;
 }
 
 .item {
     flex: 0 0 200px;
-    margin: 0 10px;
+    margin: 0 5px;
     background-color: #4a3b2d;
     border-radius: 8px;
     color: #fff;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Gaya untuk logo dengan rounded corner */
 .item img {
-    width: 100%;
-    height: auto;
-    border-radius: 12px; /* Membuat rounded corner */
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Membuat logo berbentuk lingkaran */
 }
 
 /* Gaya untuk tombol "GO TO" */
 .go-to-button {
-    margin-top: 10px;
+    margin-top: 15px;
     padding: 10px 20px;
     background-color: #e4cfa0;
     color: #4a3b2d;
@@ -54,6 +66,8 @@ h1 {
     cursor: pointer;
     text-decoration: none;
     font-weight: bold;
+    width: 80px;
+    text-align: center;
 }
 
 .go-to-button:hover {
@@ -72,16 +86,14 @@ h1 {
     transform: translateY(-50%);
     width: 50px;
     height: 50px;
+    background-image: url('/mnt/data/gulir.jpg'); /* Menggunakan tombol gulir yang Anda unggah */
+    background-size: cover;
 }
 
 .nav-left {
-    left: 5%;
-    background-image: url('gulir.jpg'); /* Ganti dengan URL untuk tombol kiri */
-    background-size: cover;
+    left: -30px;
 }
 
 .nav-right {
-    right: 5%;
-    background-image: url('gulir.jpg'); /* Ganti dengan URL untuk tombol kanan */
-    background-size: cover;
+    right: -30px;
 }
