@@ -1,116 +1,63 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ekosistem Story</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Ecosystem</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <h1>EKOSISTEM STORY</h1>
-    
-    <div class="scroll-btn" id="scrollUp">↑</div> <!-- Tombol scroll atas -->
-    
-    <div class="menu" id="menuList">
-      <div class="menu-item">
-        <img src="https://raw.githubusercontent.com/WillEnyong/storyecosystem/main/icon/logo1.jpg" alt="Logo 1">
-        <a href="https://example.com/1" class="btn">GO TO</a>
-      </div>
-      <div class="menu-item">
-        <img src="https://raw.githubusercontent.com/WillEnyong/storyecosystem/main/icon/logo2.jpg" alt="Logo 2">
-        <a href="https://example.com/2" class="btn">GO TO</a>
-      </div>
-      <div class="menu-item">
-        <img src="https://raw.githubusercontent.com/WillEnyong/storyecosystem/main/icon/logo3.jpg" alt="Logo 3">
-        <a href="https://example.com/3" class="btn">GO TO</a>
-      </div>
-      <div class="menu-item">
-        <img src="https://raw.githubusercontent.com/WillEnyong/storyecosystem/main/icon/logo4.jpg" alt="Logo 4">
-        <a href="https://example.com/4" class="btn">GO TO</a>
-      </div>
-      <div class="menu-item">
-        <img src="https://raw.githubusercontent.com/WillEnyong/storyecosystem/main/icon/logo5.jpg" alt="Logo 5">
-        <a href="https://example.com/5" class="btn">GO TO</a>
-      </div>
-      <div class="menu-item">
-        <img src="https://raw.githubusercontent.com/WillEnyong/storyecosystem/main/icon/logo6.jpg" alt="Logo 6">
-        <a href="https://example.com/6" class="btn">GO TO</a>
-      </div>
-      <div class="menu-item">
-        <img src="https://raw.githubusercontent.com/WillEnyong/storyecosystem/main/icon/logo7.jpg" alt="Logo 7">
-        <a href="https://example.com/7" class="btn">GO TO</a>
-      </div>
-      <div class="menu-item">
-        <img src="https://raw.githubusercontent.com/WillEnyong/storyecosystem/main/icon/logo8.jpg" alt="Logo 8">
-        <a href="https://example.com/8" class="btn">GO TO</a>
-      </div>
-      <div class="menu-item">
-        <img src="https://raw.githubusercontent.com/WillEnyong/storyecosystem/main/icon/logo9.jpg" alt="Logo 9">
-        <a href="https://example.com/9" class="btn">GO TO</a>
-      </div>
-      <div class="menu-item">
-        <img src="https://raw.githubusercontent.com/WillEnyong/storyecosystem/main/icon/logo10.jpg" alt="Logo 10">
-        <a href="https://example.com/10" class="btn">GO TO</a>
-      </div>
-      <div class="menu-item">
-        <img src="https://raw.githubusercontent.com/WillEnyong/storyecosystem/main/icon/logo11.jpg" alt="Logo 11">
-        <a href="https://example.com/11" class="btn">GO TO</a>
-      </div>
-      <div class="menu-item">
-        <img src="https://raw.githubusercontent.com/WillEnyong/storyecosystem/main/icon/logo12.jpg" alt="Logo 12">
-        <a href="https://example.com/12" class="btn">GO TO</a>
-      </div>
-      <div class="menu-item">
-        <img src="https://raw.githubusercontent.com/WillEnyong/storyecosystem/main/icon/logo13.jpg" alt="Logo 13">
-        <a href="https://example.com/13" class="btn">GO TO</a>
-      </div>
-      <div class="menu-item">
-        <img src="https://raw.githubusercontent.com/WillEnyong/storyecosystem/main/icon/logo14.jpg" alt="Logo 14">
-        <a href="https://example.com/14" class="btn">GO TO</a>
-      </div>
-      <div class="menu-item">
-        <img src="https://raw.githubusercontent.com/WillEnyong/storyecosystem/main/icon/logo15.jpg" alt="Logo 15">
-        <a href="https://example.com/15" class="btn">GO TO</a>
-      </div>
-      <div class="menu-item">
-        <img src="https://raw.githubusercontent.com/WillEnyong/storyecosystem/main/icon/logo16.jpg" alt="Logo 16">
-        <a href="https://example.com/16" class="btn">GO TO</a>
-      </div>
-      <div class="menu-item">
-        <img src="https://raw.githubusercontent.com/WillEnyong/storyecosystem/main/icon/logo17.jpg" alt="Logo 17">
-        <a href="https://example.com/17" class="btn">GO TO</a>
-      </div>
-      <div class="menu-item">
-        <img src="https://raw.githubusercontent.com/WillEnyong/storyecosystem/main/icon/logo18.jpg" alt="Logo 18">
-        <a href="https://example.com/18" class="btn">GO TO</a>
-      </div>
+    <div class="container">
+        <h1>STORY ECOSYSTEM</h1>
+        <div class="slider">
+            <button class="nav-button nav-left" onclick="scrollLeft()"></button>
+
+            <!-- Item Slider -->
+            <div class="item">
+                <img src="logo1.jpg" alt="Logo 1">
+                <a href="https://your-link.com" target="_blank" class="go-to-button">GO TO</a>
+            </div>
+            <div class="item">
+                <img src="logo2.jpg" alt="Logo 2">
+                <a href="https://your-link.com" target="_blank" class="go-to-button">GO TO</a>
+            </div>
+            <div class="item">
+                <img src="logo3.jpg" alt="Logo 3">
+                <a href="https://your-link.com" target="_blank" class="go-to-button">GO TO</a>
+            </div>
+            <div class="item">
+                <img src="logo4.jpg" alt="Logo 4">
+                <a href="https://your-link.com" target="_blank" class="go-to-button">GO TO</a>
+            </div>
+            <div class="item">
+                <img src="logo5.jpg" alt="Logo 5">
+                <a href="https://your-link.com" target="_blank" class="go-to-button">GO TO</a>
+            </div>
+
+            <button class="nav-button nav-right" onclick="scrollRight()"></button>
+        </div>
     </div>
-    
-    <div class="scroll-btn" id="scrollDown">↓</div> <!-- Tombol scroll bawah -->
-  </div>
 
-  <script>
-    const menuList = document.getElementById('menuList');
-    const scrollUp = document.getElementById('scrollUp');
-    const scrollDown = document.getElementById('scrollDown');
-    let offset = 0;
+    <script>
+        // JavaScript untuk fungsi scroll kiri dan kanan
+        let slider = document.querySelector('.slider');
+        let scrollAmount = 0;
 
-    // Fungsi untuk menggulirkan menu ke atas
-    scrollUp.addEventListener('click', () => {
-      if (offset > 0) {
-        offset -= 120; // Geser ke atas sebesar tinggi item menu
-        menuList.style.transform = `translateY(${offset}px)`;
-      }
-    });
+        function scrollLeft() {
+            slider.scrollBy({
+                top: 0,
+                left: -210,
+                behavior: 'smooth'
+            });
+        }
 
-    // Fungsi untuk menggulirkan menu ke bawah
-    scrollDown.addEventListener('click', () => {
-      if (offset < (menuList.children.length - 5) * 120) {
-        offset += 120; // Geser ke bawah sebesar tinggi item menu
-        menuList.style.transform = `translateY(${offset}px)`;
-      }
-    });
-  </script>
+        function scrollRight() {
+            slider.scrollBy({
+                top: 0,
+                left: 210,
+                behavior: 'smooth'
+            });
+        }
+    </script>
 </body>
 </html>
