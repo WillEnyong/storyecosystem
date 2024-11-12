@@ -21,6 +21,7 @@ body {
   text-align: center;
   width: 90%;
   max-width: 1000px;
+  overflow: hidden; /* Menyembunyikan bagian yang melebihi kontainer */
 }
 
 /* Header styling */
@@ -33,11 +34,12 @@ h1 {
 /* Menu container */
 .menu {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  overflow-y: auto;
-  max-height: 80vh;
+  flex-direction: column; /* Mengubah menjadi kolom */
+  max-height: 600px; /* Menentukan tinggi maksimum untuk scroll */
+  overflow-y: auto; /* Mengaktifkan scroll vertikal */
+  padding-right: 10px; /* Memberi ruang untuk scroll */
+  gap: 20px; /* Jarak antar item */
+  justify-content: flex-start; /* Menyelaraskan item ke atas */
 }
 
 /* Menu item styling */
@@ -52,6 +54,8 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-shrink: 0; /* Agar item tidak mengecil */
+  margin-right: 20px; /* Jarak antar item */
 }
 
 /* Button styling */
@@ -75,7 +79,22 @@ h1 {
 /* Image styling */
 .menu-item img {
   width: 60px; /* Ukuran logo */
-  height: 60px; /* Pastikan gambar berbentuk persegi */
+  height: auto;
   margin-bottom: 10px;
-  border-radius: 8px; /* Rounded corners pada gambar */
+}
+
+/* Responsif untuk tampilan kecil */
+@media screen and (max-width: 768px) {
+  .menu {
+    gap: 10px; /* Mengurangi jarak antar item pada layar kecil */
+  }
+
+  .menu-item {
+    width: 120px; /* Mengurangi lebar menu-item di layar kecil */
+    height: 100px; /* Mengurangi tinggi menu-item */
+  }
+
+  h1 {
+    font-size: 28px; /* Mengurangi ukuran judul di layar kecil */
+  }
 }
