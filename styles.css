@@ -1,116 +1,87 @@
-/* Body styling */
-body {
-  margin: 0;
-  background-image: url('https://raw.githubusercontent.com/WillEnyong/storyecosystem/main/asset/bg.png'); /* Background gambar */
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: Arial, sans-serif;
-  color: #f5e4d7; /* Warna teks lebih terang */
-  height: 100vh;
-}
-
-/* Container styling */
+/* Gaya untuk kontainer */
 .container {
-  background-color: #656565; /* Warna background abu-abu gelap sesuai gambar */
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan halus */
-  text-align: center;
-  width: 90%;
-  max-width: 1000px;
-  overflow: hidden; /* Menyembunyikan bagian yang melebihi kontainer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('your-background-image.jpg'); /* Ganti dengan URL background Anda */
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    color: white;
 }
 
-/* Header styling */
+/* Gaya untuk judul */
 h1 {
-  font-size: 36px;
-  margin-bottom: 20px;
-  color: #e7d2b5; /* Warna teks untuk judul */
+    font-size: 3em;
+    margin-bottom: 20px;
 }
 
-/* Menu container */
-.menu {
-  display: flex;
-  flex-direction: column; /* Mengubah menjadi kolom */
-  max-height: 600px; /* Menentukan tinggi maksimum untuk scroll */
-  padding-right: 10px; /* Memberi ruang untuk scroll */
-  gap: 20px; /* Jarak antar item */
-  justify-content: flex-start; /* Menyelaraskan item ke atas */
-  overflow: hidden; /* Menyembunyikan area di luar */
-  transition: transform 0.3s ease-out; /* Animasi pergeseran menu */
+/* Gaya untuk item slider */
+.slider {
+    display: flex;
+    overflow: hidden;
+    width: 80%;
+    max-width: 1000px;
 }
 
-/* Menu item styling */
-.menu-item {
-  background-color: #4c3a2f; /* Warna coklat tua untuk latar menu */
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Bayangan lebih dalam */
-  text-align: center;
-  width: 150px;
-  height: 120px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-shrink: 0; /* Agar item tidak mengecil */
-  margin-right: 20px; /* Jarak antar item */
+.item {
+    flex: 0 0 200px;
+    margin: 0 10px;
+    background-color: #4a3b2d;
+    border-radius: 8px;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
 }
 
-/* Button styling */
-.btn {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 8px 16px;
-  background-color: #e7d2b5; /* Warna tombol sesuai gambar */
-  color: #4c3a2f; /* Warna teks tombol */
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 8px;
-  transition: transform 0.2s;
+/* Gaya untuk logo dengan rounded corner */
+.item img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px; /* Membuat rounded corner */
 }
 
-/* Hover effect */
-.btn:hover {
-  transform: scale(1.05); /* Efek zoom ketika tombol di-hover */
+/* Gaya untuk tombol "GO TO" */
+.go-to-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #e4cfa0;
+    color: #4a3b2d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-/* Image styling */
-.menu-item img {
-  width: 60px; /* Ukuran logo */
-  height: auto;
-  margin-bottom: 10px;
+.go-to-button:hover {
+    background-color: #d4bf90;
 }
 
-/* Scroll navigation buttons */
-.scroll-btn {
-  background-color: #4c3a2f;
-  color: #e7d2b5;
-  padding: 10px;
-  border-radius: 50%;
-  cursor: pointer;
-  font-size: 18px;
-  transition: transform 0.3s ease;
+/* Gaya untuk tombol navigasi */
+.nav-button {
+    font-size: 2em;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
 }
 
-.scroll-btn:hover {
-  transform: scale(1.1); /* Efek hover pada tombol */
+.nav-left {
+    left: 5%;
+    background-image: url('gulir.jpg'); /* Ganti dengan URL untuk tombol kiri */
+    background-size: cover;
 }
 
-/* Responsif untuk tampilan kecil */
-@media screen and (max-width: 768px) {
-  .menu {
-    gap: 10px; /* Mengurangi jarak antar item pada layar kecil */
-  }
-
-  .menu-item {
-    width: 120px; /* Mengurangi lebar menu-item di layar kecil */
-    height: 100px; /* Mengurangi tinggi menu-item */
-  }
-
-  h1 {
-    font-size: 28px; /* Mengurangi ukuran judul di layar kecil */
-  }
+.nav-right {
+    right: 5%;
+    background-image: url('gulir.jpg'); /* Ganti dengan URL untuk tombol kanan */
+    background-size: cover;
 }
