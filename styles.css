@@ -36,10 +36,11 @@ h1 {
   display: flex;
   flex-direction: column; /* Mengubah menjadi kolom */
   max-height: 600px; /* Menentukan tinggi maksimum untuk scroll */
-  overflow-y: auto; /* Mengaktifkan scroll vertikal */
   padding-right: 10px; /* Memberi ruang untuk scroll */
   gap: 20px; /* Jarak antar item */
   justify-content: flex-start; /* Menyelaraskan item ke atas */
+  overflow: hidden; /* Menyembunyikan area di luar */
+  transition: transform 0.3s ease-out; /* Animasi pergeseran menu */
 }
 
 /* Menu item styling */
@@ -81,6 +82,21 @@ h1 {
   width: 60px; /* Ukuran logo */
   height: auto;
   margin-bottom: 10px;
+}
+
+/* Scroll navigation buttons */
+.scroll-btn {
+  background-color: #4c3a2f;
+  color: #e7d2b5;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.scroll-btn:hover {
+  transform: scale(1.1); /* Efek hover pada tombol */
 }
 
 /* Responsif untuk tampilan kecil */
