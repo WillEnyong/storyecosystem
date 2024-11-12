@@ -1,7 +1,7 @@
 /* Body styling */
 body {
   margin: 0;
-  background-image: url('Story.jpg'); /* Background gambar */
+  background-image: url('https://github.com/WillEnyong/storyecosystem/blob/main/asset/bg.png'); /* Background gambar */
   background-size: cover;
   background-position: center;
   display: flex;
